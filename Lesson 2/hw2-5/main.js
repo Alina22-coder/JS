@@ -1,11 +1,11 @@
 // #coYydZuaeEB
 let weather=[
-    {morning:5, day:17, evening:9},
-    {morning:10, day:15, evening:10},
-    {morning:8, day:13, evening:7},
-    {morning:3, day:18, evening:12},
-    {morning:5, day:19, evening:10},
-    {morning:9, day:11, evening:8},
-    {morning:8, day:10, evening:7},
+    {day: 'Monday', morningTemp:5, dayTemp:17, eveningTemp:9},
+    {day: 'Tuesday', morningTemp:10, dayTemp:15, eveningTemp:10},
+    {day: 'Wednesday', morningTemp:8, dayTemp:13, eveningTemp:7},
+    {day: 'Thursday', morningTemp:3, dayTemp:18, eveningTemp:12},
+    {day: 'Friday', morningTemp:5, dayTemp:19, eveningTemp:10},
+    {day: 'Saturday', morningTemp:9, dayTemp:11, eveningTemp:8},
+    {day: 'Sunday', morningTemp:8, dayTemp:10, eveningTemp:7},
 ]
 console.log(weather);
