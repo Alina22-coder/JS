@@ -12,7 +12,7 @@ const abcd = [
 
 function valueFunction(arr){
     for (let item = 0; item < arr.length; item++) {
-        document.write(`<div>id: ${(arr[item].id)} , name: ${(arr[item].name)} , age: ${(arr[item].age)}</div>`);
+        document.write(`<div>${(arr[item].id)}, ${(arr[item].name)}, ${(arr[item].age)}</div>`);
     }
 }
 

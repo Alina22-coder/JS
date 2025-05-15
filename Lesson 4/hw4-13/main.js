@@ -1,8 +1,4 @@
 // #mkGDenYnNjn
-const currencyValues = [
-    {currency:'USD', value:25},
-    {currency:'EUR', value:42}
-]
 
 function exchange(sumUAH,currencyValues,exchangeCurrency){
     for (let item of currencyValues){
@@ -12,6 +8,6 @@ function exchange(sumUAH,currencyValues,exchangeCurrency){
     }
 }
 
-console.log(exchange(10000, currencyValues, 'USD'));
-console.log(exchange(10000, currencyValues, 'EUR'));
+console.log(exchange(10000, [{currency:'USD', value:25}, {currency:'EUR', value:42}], 'USD'));
+console.log(exchange(10000, [{currency:'USD', value:25}, {currency:'EUR', value:42}], 'EUR'));
 

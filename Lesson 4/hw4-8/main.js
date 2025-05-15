@@ -1,5 +1,4 @@
 // #gEFoxMMO
-const qwe = [2, true, 13, -6, '22', 31, 'My name', false, 100, 'Alina'];
 
 function arrFunction(arr){
     document.write(`<ul>`);
@@ -10,5 +9,5 @@ function arrFunction(arr){
     document.write(`</ul>`);
 }
 
-arrFunction(qwe);
+arrFunction([2, true, 13, -6, '22', 31, 'My name', false, 100, 'Alina']);
 
