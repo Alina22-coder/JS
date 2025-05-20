@@ -1,5 +1,4 @@
 //#reLkOkTB29Q
-
 const arrBook = [
     {title: 'BookOne',
         pages: 200,
@@ -13,7 +12,7 @@ const arrBook = [
     },
     {title: 'BookThree',
         pages: 742,
-        authors:['authors1', 'authors2', 'authors3'],
+        authors:['authors1'],
         genres: ['genres1', 'genres2']
     },
     {title: 'BookFour',
@@ -27,6 +26,7 @@ const arrBook = [
         genres: ['genres1', 'genres2']
     }
 ]
+
 
 // let maxPages = arrBook[0];
 // for (let i = 1; i < arrBook.length; i++) {
@@ -52,9 +52,15 @@ const arrBook = [
 // }
 // console.log(maxTitle);
 
-for (let i = 0; i < arrBook.length; i++){
-    if (arrBook[i].authors === 2){
-        console.log(arrBook[i]);
-    }
-}
+// for (let i = 0; i < arrBook.length; i++) {
+//     if (arrBook[i].authors.length === 2){
+//         console.log(arrBook[i]);
+//     }
+// }
+
+// for (let i = 0; i< arrBook.length; i++){
+//     if(arrBook[i].authors.length === 1){
+//         console.log(arrBook[i]);
+//     }
+// }
 
