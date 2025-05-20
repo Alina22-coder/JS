@@ -1,5 +1,5 @@
 // #yo06d74c1C
-let coursesAndDurationArray = [
+const coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
     {title: 'Python Complex', monthDuration: 6},
@@ -8,16 +8,13 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-// let sortedCourses = coursesAndDurationArray.sort((a, b) => a.monthDuration - b.monthDuration);
-// console.log(sortedCourses);
+const map1 = coursesAndDurationArray
+    .sort((a, b) => a.monthDuration - b.monthDuration)
+    .filter(value => value.monthDuration > 5)
+    .map((value, index) => ({...value, index: index+1}));
 
-// let filteredCourses = coursesAndDurationArray.filter(value => value.monthDuration > 5);
-// console.log(filteredCourses);
+    console.log(map1);
 
-// let mapCourses = coursesAndDurationArray.map(function(value, index) {
-//     return {id:index+1, title:value.title, monthDuration:value.monthDuration}
-// });
-// console.log(mapCourses);
 
 
 
