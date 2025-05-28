@@ -7,15 +7,6 @@ function User (id, name, surname, email, phone) {
     this.phone = phone;
 }
 
-for (let i = 1; i <= 10; i++){
-    newArr.push(new User (
-        i,
-        `Name${i}`,
-        `Surname${i}`,
-        `user${i}@gmail.com`,
-        `09800000${i}`
-    ))
-}
 const users = [
     new User(1, 'Anna', 'Ivanova', 'anna1@gmail.com', '0970000001'),
     new User(2, 'Bohdan', 'Petrov', 'bohdan2@gmail.com', '0970000002'),

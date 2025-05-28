@@ -6,40 +6,45 @@ class Car {
         this.yearOfRelease = yearOfRelease;
         this.maximumSpeed = maximumSpeed;
         this.engineCapacity = engineCapacity;
-
-        this.drive = function (){
-            return `їдемо зі швидкістю ${maximumSpeed} на годину`;
+    }
+    drive (){
+        return `їдемо зі швидкістю ${this.maximumSpeed} на годину`;
+    };
+    info (){
+        for (const key in this){
+            console.log(key, this[key]);
         }
-        this.info = function (){
-            return `model - ${model}, producer - ${producer}, yearOfRelease - ${yearOfRelease}, maximumSpeed - ${maximumSpeed}, engineCapacity - ${engineCapacity} `;
+    };
+    increaseMaxSpeed  (newSpeed) {
+        if(newSpeed > 0){
+            return this.maximumSpeed + newSpeed
         }
-        this.increaseMaxSpeed = function (newSpeed) {
-            return this.maximumSpeed * newSpeed
-        }
-        this.changeYear = function (newValue) {
+    };
+    changeYear (newValue) {
+        if(newValue >1815){
             return this.yearOfRelease = newValue;
         }
-        this.addDriver = function (driver) {
-            this.driver = driver;
-        }
-    }
+    };
+    addDriver (driver) {
+        this.driver = driver;
+    };
 }
 
-let car2 = new Car ('Model S', 'Tesla', 2022, 250,  2.0);
+let car = new Car ('Model S', 'Tesla', 2022, 250,  2.0);
 
-console.log(car2.drive());
-console.log(car2.info());
-console.log(car2.increaseMaxSpeed(20));
-console.log(car2.changeYear(2000));
+console.log(car.drive());
+console.log(car.info());
+console.log(car.increaseMaxSpeed(20));
+console.log(car.changeYear(2000));
 
-const driver2={
+const driver={
     name: "Олександр",
     age: 35,
     license: true,
     experience: "10 років"
 }
-car2.addDriver(driver2);
-console.log(car2);
+car.addDriver(driver);
+console.log(car);
 
 
 

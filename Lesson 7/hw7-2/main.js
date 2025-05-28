@@ -9,7 +9,7 @@ function Client (id, name, surname, email, phone, order) {
 }
 
 const clients = [
-    new Client(1, 'Anna', 'Ivanova', 'anna1@gmail.com', '0970000001', ['aa', 'bb', 'cc', 'dd']),
+    new Client(1, 'Anna', 'Ivanova', 'anna1@gmail.com', '0970000001', ['aa', 'cc', 'dd']),
     new Client(2, 'Bohdan', 'Petrov', 'bohdan2@gmail.com', '0970000002', ['bb', 'ff', 'ss', 'tt']),
     new Client(3, 'Kateryna', 'Shevchenko', 'katya3@gmail.com', '0970000003', ['yy', 'cc', 'ss', 'rr', 'oo', 'pp']),
     new Client(4, 'Dmytro', 'Sydorenko', 'dima4@gmail.com', '0970000004', ['aa', 'bb', 'cc', 'uu', 'qq']),
