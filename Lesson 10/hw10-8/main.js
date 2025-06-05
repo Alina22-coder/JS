@@ -37,6 +37,7 @@ button.addEventListener('click', function () {
         table.appendChild(row);
     }
 
+
     document.body.appendChild(table);
 })
 

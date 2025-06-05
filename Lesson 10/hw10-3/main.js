@@ -24,8 +24,8 @@ button.innerText = "Submit";
 
 let div = document.createElement("div");
 
-button.addEventListener("click", function () {
-    event.preventDefault();
+button.addEventListener("click", function (e) {
+    e.preventDefault();
 
     let name = inputName.value;
     let surname = inputSurname.value;
